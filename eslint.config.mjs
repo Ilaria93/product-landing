@@ -11,6 +11,19 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    files: ["**/*.ts", "**/*.tsx"],
+    parser: "@typescript-eslint/parser",
+    plugins: ["@typescript-eslint"],
+    rules: {
+      "semi": ["error", "always"],
+      "quotes": ["error", "double"],
+      "comma-dangle": ["error", "always-multiline"],
+      "indent": ["error", 2],
+      "space-before-function-paren": ["error", "never"],
+      "object-curly-spacing": ["error", "always"],
+    },
+  },
 ];
 
 export default eslintConfig;
