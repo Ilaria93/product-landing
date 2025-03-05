@@ -21,8 +21,8 @@ import CTASection from "@/components/cta";
 
 const sections = [
   { id: "home", label: "Home" },
-  { id: "how-it-works", label: "How It Works" },
   { id: "features", label: "Features" },
+  { id: "how-it-works", label: "How It Works" },
   { id: "pricing", label: "Pricing" },
   { id: "testimonials", label: "Testimonials" },
   { id: "faq", label: "FAQ" },
@@ -65,7 +65,7 @@ export default function Home() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-white p-4 fixed w-full top-0 shadow-lg shadow-[#1299e6]/5 z-50"
+        className="bg-white/80 backdrop-blur-md z-50 p-4 fixed w-full top-0 shadow-lg shadow-[#1299e6]/5 z-50"
       >
         <div className="max-w-[90%] mx-auto flex justify-between items-center">
           <div className="flex items-center">
@@ -74,7 +74,7 @@ export default function Home() {
               alt="Logo"
               className="w-fit h-16 mr-2 rounded-2xl"
             />
-            <h1 className="text-xl font-bold text-black cursor-pointer text-red-500">
+            <h1 className="text-xl font-bold text-black cursor-pointer text-#00588a">
               SN24
             </h1>
           </div>
@@ -107,7 +107,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="px-5 py-20 mx-auto text-center"
+          className="mx-auto text-center"
         >
           {section.id === "home" && <HeroSection />}
           {section.id === "features" && <Features />}

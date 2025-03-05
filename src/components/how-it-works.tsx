@@ -24,16 +24,18 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="bg-gray-50 py-24 sm:py-32">
-      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-center text-base font-semibold text-blue-600">
+    <section className="bg-gradient-to-b from-[#a5daf9] to-white py-24 sm:py-32">
+      <div className="mx-auto max-w-4xl px-6 lg:max-w-7xl lg:px-8">
+        <p className="text-center text-base font-semibold text-[#1299e6]">
           Semplice e Veloce
-        </h2>
-        <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-          Come Funziona?
         </p>
-
-        <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-1">
+        <h2 className="mx-auto mt-2 text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
+          Come Funziona?
+        </h2>
+        <p className="mt-6 text-center text-2xl text-gray-600">
+          Tre semplici passaggi per trasformare la tua presenza sui social media
+        </p>
+        <div className="mt-10 grid gap-10 sm:mt-16 lg:grid-cols-3 lg:grid-rows-1">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -46,10 +48,10 @@ export default function HowItWorks() {
                   alt={step.title}
                   className="rounded-xl w-full h-auto object-cover"
                 />
-                <h3 className="mt-4 text-lg font-medium text-gray-900">
+                <h3 className="mt-4 text-2xl font-medium text-gray-900">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm text-gray-600">{step.desc}</p>
+                <p className="mt-2 text-lg text-gray-600">{step.desc}</p>
               </div>
             </motion.div>
           ))}
