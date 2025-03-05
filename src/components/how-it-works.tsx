@@ -24,7 +24,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="bg-gradient-to-b from-[#a5daf9] to-white py-24 sm:py-32">
+    <section className="bg-trasparent py-24 sm:py-32">
       <div className="mx-auto max-w-4xl px-6 lg:max-w-7xl lg:px-8">
         <p className="text-center text-base font-semibold text-[#1299e6]">
           Semplice e Veloce

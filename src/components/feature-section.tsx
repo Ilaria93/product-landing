@@ -47,7 +47,7 @@ export default function Features() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="relative p-10 bg-[#f1faff] rounded-lg shadow-lg shadow-[#00588a]/50"
+                className="relative p-10 bg-[#f1faff] rounded-lg shadow-lg shadow-[#1299e6]/20"
               >
                 <dt className="text-2xl font-semibold text-gray-900 text-left">
                   <div className="mb-4 items-center justify-center ">

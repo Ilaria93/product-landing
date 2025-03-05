@@ -78,24 +78,28 @@ export default function Home() {
               SN24
             </h1>
           </div>
-          <NavigationMenu>
-            <NavigationMenuList className="flex space-x-4 ">
+          <NavigationMenu className="flex-1">
+            <NavigationMenuList className="flex justify-center space-x-4">
               {sections.map((section) => (
                 <NavigationMenuItem key={section.id}>
                   <button
-                    className={`flex items-center gap-2 bg-transparent font-semibold text-md ${currentSection === section.id ? "text-[#1299e6]" : "text-black"}`}
+                    className={`flex items-center gap-2 bg-transparent font-semibold text-xl ${
+                      currentSection === section.id
+                        ? "text-[#1299e6]"
+                        : "text-black"
+                    }`}
                     onClick={() => scrollToSection(section.id)}
                   >
                     {section.label}
                   </button>
                 </NavigationMenuItem>
               ))}
-              <NavigationMenuItem>
-                <Button className="border-4 border-[#1299e6] bg-transparent hover:bg-[#1299e6] hover:text-white text-black px-6 py-4 rounded-xl text-2xl shadow-sm shadow-[#1299e6]/100 font-semibold h-fit">
-                  Prova Ora!
-                </Button>
-              </NavigationMenuItem>
             </NavigationMenuList>
+          </NavigationMenu>
+          <NavigationMenu>
+            <Button className="border-4 border-[#1299e6] bg-transparent hover:bg-[#1299e6] hover:text-white text-black px-6 py-4 rounded-xl text-2xl font-semibold h-fit">
+              Prova Ora!
+            </Button>
           </NavigationMenu>
         </div>
       </motion.nav>
