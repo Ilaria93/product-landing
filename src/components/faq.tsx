@@ -36,20 +36,24 @@ const faqs = [
 export default function FAQ() {
   return (
     <section className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-3xl px-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
           Domande Frequenti
         </h2>
-        <p className="mt-4 text-lg text-gray-600">
+        <p className="text-2xl text-gray-600 my-8">
           Qui trovi le risposte alle domande più comuni su Sn24.
         </p>
       </div>
-      <div className="mx-auto mt-10 max-w-2xl">
+      <div className="mx-auto mt-10 max-w-7xl px-6 lg:px-8">
         <Accordion type="single" collapsible>
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`faq-${index}`}>
-              <AccordionTrigger>{faq.question}</AccordionTrigger>
-              <AccordionContent>{faq.answer}</AccordionContent>
+              <AccordionTrigger className="text-lg font-semibold text-[#1299e6]">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-left text-lg text-gray-600 mt-4">
+                {faq.answer}
+              </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

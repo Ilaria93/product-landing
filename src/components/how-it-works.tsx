@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import blog from "../assets/images/articles.png";
-import blog2 from "../assets/images/blog2.png";
+import blog from "../assets/images/article-2.png";
+import blog2 from "../assets/images/notify2.png";
 import blog3 from "../assets/images/blog3.png";
 
 const steps = [
   {
-    img: blog2,
+    img: blog,
     title: "Inserisci un input",
     desc: "Digita un argomento o titolo e lascia che il nostro sistema faccia il resto.",
   },
@@ -16,7 +16,7 @@ const steps = [
     desc: "SN24 crea un articolo completo con immagini pertinenti e testo ottimizzato.",
   },
   {
-    img: blog,
+    img: blog2,
     title: "Pubblica con un click",
     desc: "Modifica, personalizza e pubblica il contenuto in pochi secondi.",
   },
